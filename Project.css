@@ -11,33 +11,33 @@ figcaption {
 }
 
 body {
-  font-family: Verdana, Arial, sans-serif;
   background-color: yellow;
+  font-family: Verdana, Arial, sans-serif;
 }
 
 #wrapper {
   background-color: #b3c7e6;
-  color: #000066;
-  width: 80%;
+  color: blue;
   margin: auto;
   min-width: 850px;
+  width: 80%;
 }
 
 header {
   background-color: #869dc7;
   background-image: url(Philippines.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   color: white;
   font-size: 150%;
   padding: 10px 10px 10px 155px;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
 }
 
 nav {
   float: right;
-  width: 150px;
-  letter-spacing: 0.1em;
   font-weight: bold;
+  letter-spacing: 0.1em;
+  width: 150px;
 }
 
 nav ul {
@@ -47,18 +47,18 @@ nav ul {
 }
 
 nav a {
-  text-decoration: none;
+  background-color: #b3c7e6;
+  background-image: url(Sprites.gif);
+  background-position: right 0;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid white;
   display: block;
   padding: 20px;
-  background-color: #b3c7e6;
-  border-bottom: 1px solid #ffffff;
-  background-image: url(Sprites.gif);
-  background-repeat: no-repeat;
-  background-position: right 0;
+  text-decoration: none;
 }
 
 nav a:link {
-  color: #ffffff;
+  color: white;
 }
 
 nav a:visited {
@@ -72,10 +72,10 @@ nav a:hover {
 }
 
 main {
-  background-color: #ffffff;
+  background-color: white;
   color: purple;
-  font-weight: bold;
   font-family: arial, sans-serif;
+  font-weight: bold;
   overflow: auto;
   padding: 10px 20px;
 }
