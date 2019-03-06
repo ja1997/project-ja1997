@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="description"
+      content="Landscapes are all the visible features of an area of 
+countryside or land, often considered in terms of their aesthetic appeal."
+    />
+    <meta name="keywords" content="Plain, Paradise, Night, Fall, Winter" />
+    <meta name="author" content="Joshua Aclan" />
+    <meta charset="utf-8" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="Project2.css" />
+    <style>
+      fieldset {
+        width: 320px;
+        border: 2px ridge blue;
+        padding: 10px;
+        margin-bottom: 10px;
+        color: white;
+      }
+      legend {
+        font-family: Georgia, "Times New Roman", serif;
+        font-weight: bold;
+        color: white;
+      }
+      label {
+        font-family: Arial, sans-serif;
+        color: white;
+      }
+      body {
+        background-color: orange;
+      }
+      h1 {
+        color: white;
+      }
+      h4 {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header role="banner"><h1>Josh's Landscape Design</h1></header>
+    <nav role="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="table.html">Table</a></li>
+        <li><a href="form.html">Form</a></li>
+      </ul>
+    </nav>
+    <h1>Contact Us</h1>
+    <form method="get">
+      <fieldset>
+        <legend>Customer Information</legend>
+        <label>Name: <input type="text" name="name" id="name"/></label
+        ><br /><br />
+        <label>Street: <input type="text" name="street" id="street"/></label
+        ><br /><br />
+        <label>City: <input type="text" name="city" id="city"/></label
+        ><br /><br />
+        <label>State: <input type="text" name="state" id="state"/></label
+        ><br /><br />
+        <label>Zip: <input type="text" name="zip" id="zip"/></label><br /><br />
+        <label>Phone: <input type="text" name="phone" id="phone"/></label
+        ><br /><br />
+        <label>Email: <input type="text" name="email" id="email"/></label
+        ><br /><br />
+      </fieldset>
+      <br />
+      <br />
+      <fieldset>
+        <legend>Select Your Favorite Season:</legend>
+        <input type="checkbox" /> Spring <br />
+        <input type="checkbox" /> Summer <br />
+        <input type="checkbox" /> Fall <br />
+        <input type="checkbox" /> Winter <br />
+      </fieldset>
+      <br />
+      <br />
+      <fieldset>
+        <legend>Select Your Favorite Type of Landscape:</legend>
+        <input type="radio" /> Plain <br />
+        <input type="radio" /> Paradise <br />
+        <input type="radio" /> Night <br />
+        <input type="radio" /> Fall <br />
+        <input type="radio" /> Winter <br />
+      </fieldset>
+      <br />
+      <h4>Select Your Favorite Time of Day:</h4>
+      <select size="3">
+        <option> Morning </option>
+        <option> Afternoon </option>
+        <option> Night </option>
+        <option> Anytime </option>
+      </select>
+      <br />
+      <br />
+      <label for="comments">Comments:</label><br />
+      <textarea name="comments" id="comments" rows="4" cols="40"></textarea
+      ><br /><br />
+      <input type="submit" value="Submit" /> <input type="reset" />
+    </form>
+  </body>
+</html>
