@@ -1,0 +1,65 @@
+header, nav, main, footer, figure, figcaption { display: block; }
+* {box-sizing: border-box; }
+body { font-family: Verdana, Arial, sans-serif;
+       background-color: yellow;
+}
+#wrapper { background-color: #b3c7e6; 
+           color: #000066;
+           width: 80%;
+		   margin: auto;
+           min-width:850px;
+} 
+header { background-color: #869dc7;
+         background-image: url(Philippines.jpg);
+         color: white; 
+         font-size: 150%; 
+         padding: 10px 10px 10px 155px; 
+		 background-repeat: no-repeat;
+		 background-size: 100% 100%;
+} 
+nav {   float: right;
+	   width: 150px;
+	   letter-spacing:0.1em;
+	   font-weight: bold;
+	   
+} 
+nav ul { list-style-type: none; 
+          margin: 0;
+          padding: 0;
+}
+nav a {   text-decoration: none; 
+         display: block;
+	     padding: 20px;    
+         background-color: #b3c7e6;     
+	     border-bottom: 1px solid #ffffff; 	
+         background-image: url(Sprites.gif);
+         background-repeat: no-repeat;
+         background-position: right 0; 		 
+}
+nav a:link    { color: #ffffff;  }
+nav a:visited { color: #eaeaea; }
+nav a:hover   { background-color: #eaeaea;
+                color: #869dc7;
+                background-position: right -100px;	}
+main { background-color: #ffffff;
+      font-weight: bold;
+      color: purple; 
+      font-family: arial, sans-serif;
+      padding: 10px 20px;
+	  overflow: auto; 
+}
+p { font-size: 1.3em; } 
+h1 { margin-bottom: 20px; }
+h2 { color: #869dc7; 
+    font-family: arial, sans-serif;
+}
+#floatright { margin: 10px;
+             float: right;
+}
+a { font-weight: bold; }
+footer {   font-size:70%;
+         text-align: center;
+         padding: 10px;
+         background-color: #869dc7;
+		 clear: both;
+}
