@@ -4,8 +4,10 @@ main,
 footer,
 figure,
 figcaption {
-  display: block;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
+
 * {
   box-sizing: border-box;
 }
@@ -24,7 +26,12 @@ body {
 }
 
 header {
+  align-items: center;
+  background-color: #869dc7;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   color: white;
+  display: flex;
   font-size: 150%;
   padding: 10px 10px 10px 155px;
 }
@@ -44,7 +51,6 @@ nav ul {
 
 nav a {
   background-color: #b3c7e6;
-  background-image: url(Sprites.gif);
   background-position: right 0;
   background-repeat: no-repeat;
   border-bottom: 1px solid white;
@@ -58,13 +64,14 @@ nav a:link {
 }
 
 nav a:visited {
-  color: #eaeaea;
+  color: green;
 }
 
 nav a:hover {
-  background-color: #eaeaea;
+  background-color: lightblue;
   background-position: right -100px;
-  color: #869dc7;
+  color: orange;
+  transition: all 0.5s ease-out;
 }
 
 main {
@@ -80,7 +87,21 @@ p {
   font-size: 1.3em;
 }
 
+@keyframes font {
+  from {
+    font-size: 0px;
+  }
+  to {
+    font-size: 50px;
+  }
+}
+
 h1 {
+  align-content: center;
+  animation: 2s font;
+  animation-fill-mode: forwards;
+  background: lightblue;
+  display: flex;
   margin-bottom: 20px;
 }
 
@@ -96,6 +117,10 @@ h2 {
 
 a {
   font-weight: bold;
+}
+
+img {
+  position: static;
 }
 
 footer {
